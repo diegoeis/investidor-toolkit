@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49182325-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49182325-2');
+  </script>
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Investidor Toolkit - Um diretório para o investidor amador.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    :root {
+      --yellow: #FFDE02;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #FFFDE5;
+      font: 100% Lato, helvetica, verdana, arial, sans-serif;
+    }
+
+    .mny-container,
+    .mny-sub-header {
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--yellow);
+    }
+
+    .mny-logo {
+      background: #000;
+      color: #fff;
+      padding: 13px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+
+    .mny-menu {
+      font-size: 0;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .mny-menu li,
+    .mny-second-menu li {
+      font-size: 0;
+      display: inline-block;
+      vertical-align: middle;
+      list-style: none;
+    }
+
+    .mny-menu li a,
+    .mny-second-menu li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 20px 15px;
+      vertical-align: middle;
+      display: inline-block;
+      transition: all linear .15s;
+    }
+
+    .mny-menu li a:hover,
+    .mny-second-menu li a:hover {
+      background: rgba(0, 0, 0, .1)
+    }
+
+    .mny-second-menu {
+      display: inline-block;
+      float: right;
+    }
+
+    header p {
+      text-align: center;
+      font-size: 30px;
+      max-width: 1000px;
+      width: 100%;
+      font-weight: 700;
+      color: #000;
+      padding: 150px 20px;
+      margin: 0 auto;
+    }
+
+    header p a {color: #000}
+
+    header p strong {
+      text-decoration: underline;
+    }
+
+    .mny-section p {
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.5;
+      max-width: 1000px;
+      width: 100%;
+      font-weight: 400;
+      color: #000;
+      padding: 0 0 30px;
+      margin: 0 auto;
+    }
+
+    .mny-sub-header {
+      position: fixed;
+      top: 0;
+      background: var(--yellow);
+      height: 50px;
+    }
+
+    .mny-section {
+      background: #fff;
+      border-top: 1px solid rgba(0,0,0,.1);
+      padding: 0 0 100px;
+    }
+
+    .mny-title-1 {
+      font-size: 50px;
+      padding: 80px 0 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .mny-title-1 + p {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 100px;
+      padding: 0;
+      font-weight: 400;
+    }
+
+    .mny-link-collection {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 100px;
+    }
+
+    .mny-link-collection nav {
+      margin: 0 30px 90px;
+      flex: 1 0 200px;
+      vertical-align: top;
+      max-width: 100%;
+    }
+
+    .mny-link-collection nav h2 {
+      /* border-bottom: 1px solid rgba(0, 0, 0, .2); */
+      padding: 0 0 10px;
+      margin-bottom: 10px;
+      font-size: 20px
+    }
+
+    .mny-link-collection nav li {
+      list-style: none;
+    }
+
+    .mny-link-collection nav li a {
+      display: block;
+      padding: 5px 0;
+      color: #000;
+      text-decoration: none;
+      transition: all linear .15s;
+    }
+
+    .mny-link-collection nav li a:hover {
+      color: #D3C300;
+      text-decoration: underline;
+    }
+ @media screen and (max-width: 700px) {
+      .mny-logo {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      .mny-sub-header {
+        position: static;
+        height: auto;
+      }
+      .mny-menu {
+        width: 100%;
+      }
+      .mny-menu li,
+      .mny-second-menu li,
+      .mny-second-menu li a,
+      .mny-menu li a {
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+      .mny-second-menu li a,
+      .mny-menu li a {
+        padding: 7px;
+      }
+      .mny-second-menu {
+        text-align: center;
+        float: none;
+        display: block;
+        width: 100%;
+      }
+      header p {
+        font-size: 20px;
+        padding: 30px 20px;
+      }
+
+      .mny-link-collection {
+        padding: 0 30px;
+        display: block;
+      }
+
+      .mny-link-collection nav {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+<div class="mny-container">
+
+  <header>
+    <div class="mny-sub-header">
+      <a href="http://pmtoolkit.work/" class="mny-logo">Investidor Toolkit</a>
+      <ul class="mny-menu">
+        <li><a href="#tools">Ferramentas</a></li>
+        <li><a href="#content">Pessoas, Sites e Conteúdo</a></li>
+        <li><a href="#brokers">Corretoras e afins</a></li>
+        <li><a href="#robots">Robot Advisors</a></li>
+        <!-- <li><a href="#events">Events &amp; Meetups</a></li> -->
+        <!-- <li><a href="#courses">Courses</a></li> -->
+        <!-- <li><a href="#jobs">Jobs</a></li> -->
+      </ul>
+      <ul class="mny-second-menu">
+        <li><a href="#about">Sobre &amp; Contribua</a></li>
+      </ul>
+    </div>
+
+    <p>
+      <strong><a href="http://investidores-toolkit.netlify.com">Investidores Toolkit</a></strong> é um diretório onde você, investidor, pode encontrar fontes de estudo, ferramentas e conteúdo para investir melhor e sem medo.
+    </p>
+  </header>
+
+  <section id="tools" class="mny-section">
+    <h1 class="mny-title-1">Ferramentas</h1>
+    <p>Ferramentas para você organizar sua riqueza.</p>
+
+    <div class="mny-link-collection">
+
+      <nav>
+        <h2>Gestão de Portfolio</h2>
+        <ul>
+          <li><a href="https://bit.ly/dlombelloplanilhas">DLombello Planilhas</a></li>
+          <li><a href="https://www.kinvo.com.br/">Kinvo</a></li>
+          <li><a href="https://fliper.app/">Flipper</a></li>
+          <li><a href="https://finance.yahoo.com/portfolios">Yahoo! Finance</a></li>
+          <li><a href="https://www.bloomberg.com/markets/watchlist">Bloomberg Watchlist</a></li>
+          <li><a href="https://www.investing.com/portfolio/">Investing.com</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h2>Dividendos, Proventos e FIIs</h2>
+        <ul>
+          <li><a href="http://dividendobr.com/">DividendoBR</a></li>
+          <li><a href="https://www.meusdividendos.com/">Meus Dividendos</a></li>
+          <li><a href="https://www.fundsexplorer.com.br/">FundsExplorer</a></li>
+        </ul>
+      </nav>
+
+      
+      <nav>
+        <h2>Fontes de Dados</h2>
+        <ul>
+          <li><a href="https://www.fundamentus.com.br/">Fundamentus</a></li>
+          <li><a href="https://plataforma.penserico.com/">PenseRico</a></li>
+          <li><a href="https://yubb.com.br/">Yubb</a></li>
+          <li><a href="https://www.apprendafixa.com.br/">App Renda Fixa</a></li>
+        </ul>
+      </nav>
+
+
+
+  </section>
+
+  <section id="content" class="mny-section">
+    <h1 class="mny-title-1">Sites e Conteúdos</h1>
+    <p>Conteúdos para você se informar e aprender.</p>
+
+    <div class="mny-link-collection">
+
+      <nav>
+        <h2>Notícias</h2>
+        <ul>
+          <li><a href="https://www.bomdiamercado.com.br/">Bom Dia Mercado</a></li>
+          <li><a href="https://moneytimes.com.br/">Money Times</a></li>
+          <li><a href="https://braziljournal.com/">Brazil Journal</a></li>
+          <li><a href="https://www.infomoney.com.br/">Info Money</a></li>
+          <li><a href="https://br.investing.com/">Investing.com</a></li>
+          <li><a href="https://www.bloomberg.com.br/blog/">Blog Bloomberg BR</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h2>Pessoas</h2>
+        <ul>
+          <li><a href="https://twitter.com/hbredda">Henrique Bredda</a></li>
+          <li><a href="https://twitter.com/rosa_riscala">Rosa Riscala</a></li>
+          <li><a href="https://twitter.com/albuquerque_af">Pedro Albuquerque</a></li>
+          <li><a href="https://twitter.com/PedroCerize">Pedro Cerize</a></li>
+          <li><a href="https://twitter.com/VDividendos">Viver de Dividendos</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h2>Livros</h2>
+        <ul>
+          <li><a href="https://amzn.to/2SNInDb">Axiomas de Zurique</a></li>
+          <li><a href="https://amzn.to/2Tf6T4W">Faça Fortuna com Ações</a></li>
+          <li><a href="https://amzn.to/2Hi69VK">O Investidor Inteligente</a></li>
+          <li><a href="https://amzn.to/2EA8BUy">Investindo em Ações no Longo Prazo</a></li>
+          <li><a href="https://amzn.to/2SLgN9r">Guia de Dividendos Suno</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2>Blogs</h2>
+        <ul>
+          <li><a href="http://viverdedividendos.org/">Vivendo de Dividendos</a></li>
+          <li><a href="https://foconomilhao.com/">Foco no Milhão</a></li>
+          <li><a href="https://www.clubedospoupadores.com/">Clube dos Poupadores</a></li>
+          <li><a href="https://fourpillarfreedom.com/">Four Pillar Freedom</a></li>
+          <li><a href="https://www.mrmoneymustache.com/">Mr. Money Mustache</a></li>
+          <li><a href="http://www.frugalwoods.com/">Frugalwoods</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h2>Grupos</h2>
+        <ul>
+          <li><a href="https://t.me/falafiigrupo">FalaFII (telegram)</a></li>
+          <li><a href="https://t.me/bomdiamercado">Bom Dia Mercado (telegram)</a></li>
+        </ul>
+      </nav>
+<!-- 
+      <nav>
+        <h2>Artigos para começar</h2>
+        <ul>
+        </ul>
+      </nav> -->
+
+    </div>
+
+  </section>
+
+  <section id="events" class="mny-section">
+    <h1 class="mny-title-1">Corretoras e afins</h1>
+    <p>Corretores, serviços online e alternativas para você investir seu dinheiro.</p>
+
+    <div class="mny-link-collection">
+      <nav>
+        <h2>Corretoras</h2>
+        <ul>
+          <li><a href="https://www.modalmais.com.br/">ModalMais</a></li>
+          <li><a href="https://www.easynvest.com.br/">Easynvest</a></li>
+          <li><a href="https://www.clear.com.br/site">Clear</a></li>
+          <li><a href="https://www.rico.com.vc/">Rico</a></li>
+          <li><a href="https://www.xpi.com.br/">XP Investimentos</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h2>Apps para investir</h2>
+        <ul>
+          <li><a href="https://warrenbrasil.com/">Warren</a></li>
+          <li><a href="https://diin.com.br/">Diin</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </section>
+
+
+  <section id="about" class="mny-section">
+    <h1 class="mny-title-1">Sobre esse projeto</h1>
+    <p>Por que você não precisa perder tempo procurando por bons conteúdos.</p>
+    <p>Sempre que você é novo em uma determinada área, você precisa aprender tudo sobre isso o mais rápido possível. E nem sempre rápido quer dizer bom, e sempre achar boas fontes de conteúdo é um caminho árduo, ainda mais quando se trata do ramo financeiro. O que acontece é que você sempre vai perder seu tempo procurando por boas fontes de conteúdo e informação como blogs, livros e serviços. A ideia desse projeto é economizar seu tempo de procura, fazendo uma curadoria de tudo o que eu encontrei quando estava aprendendo também.</p>
+
+    <p>
+      Meu nome é <small>Diego Eis</small>. Eu trabalho com Produtos/Serviços Digitais. Você pode me encontrar no <a href="https://medium.com/@diegoeis">Medium</a> e no <a href="https://twitter.com/diegoeis">Twitter</a>.
+    </p>
+
+  </section>
+
+  <!-- Hotjar Tracking Code for http://pmtoolkit.work -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1062360,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+</div>
+</body>
+</html>
