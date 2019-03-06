@@ -21,7 +21,7 @@
   <style>
 
     :root {
-      --yellow: #FFDE02;
+      --colorDefault: #02D5FF;
     }
     * {
       margin: 0;
@@ -30,7 +30,7 @@
     }
 
     body {
-      background: #FFFDE5;
+      background: #E9FBFF;
       font: 100% Lato, helvetica, verdana, arial, sans-serif;
     }
 
@@ -42,7 +42,7 @@
     }
 
     header {
-      background: var(--yellow);
+      background: var(--colorDefault);
     }
 
     .mny-logo {
@@ -124,7 +124,7 @@
     .mny-sub-header {
       position: fixed;
       top: 0;
-      background: var(--yellow);
+      background: var(--colorDefault);
       height: 50px;
     }
 
@@ -183,7 +183,7 @@
     }
 
     .mny-link-collection nav li a:hover {
-      color: #D3C300;
+      color: var(--colorDefault);
       text-decoration: underline;
     }
  @media screen and (max-width: 700px) {
@@ -241,12 +241,11 @@
 
   <header>
     <div class="mny-sub-header">
-      <a href="http://pmtoolkit.work/" class="mny-logo">Investidor Toolkit</a>
+      <a href="http://investidor.netlify.com/" class="mny-logo">Investidor Toolkit</a>
       <ul class="mny-menu">
         <li><a href="#tools">Ferramentas</a></li>
         <li><a href="#content">Pessoas, Sites e Conteúdo</a></li>
-        <li><a href="#brokers">Corretoras e afins</a></li>
-        <li><a href="#robots">Robot Advisors</a></li>
+        <li><a href="#brokers">Corretoras, Robot Advisors e Apps</a></li>
         <!-- <li><a href="#events">Events &amp; Meetups</a></li> -->
         <!-- <li><a href="#courses">Courses</a></li> -->
         <!-- <li><a href="#jobs">Jobs</a></li> -->
@@ -257,7 +256,7 @@
     </div>
 
     <p>
-      <strong><a href="http://investidores-toolkit.netlify.com">Investidores Toolkit</a></strong> é um diretório onde você, investidor, pode encontrar fontes de estudo, ferramentas e conteúdo para investir melhor e sem medo.
+      <strong><a href="http://investidores.netlify.com">Investidores Toolkit</a></strong> é um diretório onde você, investidor, pode encontrar fontes de estudo, ferramentas e conteúdo para investir melhor e sem medo.
     </p>
   </header>
 
@@ -373,7 +372,7 @@
 
   </section>
 
-  <section id="events" class="mny-section">
+  <section id="brokers" class="mny-section">
     <h1 class="mny-title-1">Corretoras e afins</h1>
     <p>Corretores, serviços online e alternativas para você investir seu dinheiro.</p>
 
@@ -394,6 +393,13 @@
         <ul>
           <li><a href="https://warrenbrasil.com/">Warren</a></li>
           <li><a href="https://diin.com.br/">Diin</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2>Robots</h2>
+        <ul>
+          <li><a href="https://magnetis.com.br/">Magnetis</a></li>
+          <li><a href="https://verios.com.br/">Verios</a></li>
         </ul>
       </nav>
 
